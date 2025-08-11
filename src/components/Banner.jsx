@@ -7,9 +7,9 @@ const Banner = () => {
   return (
     <>
     
-    <section id='banner' className='flex justify-between items-center'>
+    <section id='banner' className='flex relative justify-between items-center'>
         <div className="container">
-            <div id='banner-row' className='pt-[112px] pb-[209px]'>
+            <div id='banner-row' className='pt-[112px] pb-[209px] flex '>
                 {/* --------------- lift-side */}
                 <div>
                     {/* ---------- h2 */}
@@ -28,11 +28,10 @@ const Banner = () => {
                 </div>
 
                 {/* ------------ right-side */}
-                
+        <div className=' absolute top-0 right-0'><img className='w-[1058px]' src={bannerimg} alt="banner-img" /></div>
 
             </div>
         </div>
-        <div><img className='w-[1058px]' src={bannerimg} alt="banner-img" /></div>
     </section>
     
     
