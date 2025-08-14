@@ -1,5 +1,6 @@
 import React from 'react'
 import ReviewCommon from './common/ReviewCommon'
+import Slider from "react-slick";
 
 const Review = () => {
   return (

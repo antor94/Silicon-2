@@ -13,14 +13,15 @@ import { VscChecklist } from "react-icons/vsc";
 const Connected = () => {
   return (
     <>
-      <section id="connected">
-        <div className="container">
-          <div className="flex justify-center">
+      <section id="connected" className="py-10 md:py-20">
+        <div className="container mx-auto px-4">
+          {/* --------------- heading */}
+          <div className="flex justify-center mb-8 md:mb-12">
             <CommonHead comh2={"Stay Organized & Connected"} />
           </div>
           <div
             id="connected-row"
-            className=" flex flex-wrap gap-[32px] pt-[64px]"
+            className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10 pt-8 md:pt-16"
           >
             <ConnectedCommon
               conectlogo={<GiConversation />}

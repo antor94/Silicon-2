@@ -7,32 +7,31 @@ const Banner = () => {
   return (
     <>
     
-    <section id='banner' className='flex relative justify-between items-center'>
+  <section id='banner' className='flex flex-col-reverse md:flex-row relative justify-between items-center pb-16 md:pb-[209px]'>
         <div className="container">
-            <div id='banner-row' className='pt-[112px] pb-[209px] flex '>
-                {/* --------------- lift-side */}
-                <div>
-                    {/* ---------- h2 */}
-                    <div className='w-[526px]'><h2 className='text-[56px] font-extrabold font-main text-[#Task Management Assistant You Gonna Love]'>Task Management Assistant You Gonna Love</h2></div>
-                {/*------------------- description  */}
-                <div className='w-[526px] pt-[32px] pb-[48px]'><p className='text-[18px] font-normal font-main text-[#585C7B]'>We offer you a new generation of task management system. Plan, manage & track all your tasks in one flexible tool.</p></div>
-                {/* ------------ button */}
-                <div className='w-[210px] bg-[#6366F1] rounded-[6px] shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)]'><button className='py-[13px] text-[16px] font-semibold font-main text-[#fff] rounded-[6px] px-[32px]' >Ger started for free</button></div>
-               
-               {/* --------------- subtitle */}
-                <div><h2 className='text-[16px] pt-[112px] pb-[40px] font-extrabold font-main text-[#131022]'>Largest companies use our tool to work efficiently</h2></div>  
-                {/* ------------- icons */}
-                <div><img src={subtitle} alt="subtitle" /></div>
-                
-                
-                </div>
-
-                {/* ------------ right-side */}
-        <div className=' absolute top-0 right-0'><img className='w-[1058px]' src={bannerimg} alt="banner-img" /></div>
-
+          <div id='banner-row' className='pt-16 md:pt-[112px] pb-16 md:pb-[209px] flex flex-col md:flex-row items-center'>
+            {/* --------------- left-side */}
+            <div className='flex-1 w-full max-w-xl'>
+              {/* ---------- h2 */}
+              <div className='w-full'><h2 className='text-3xl sm:text-4xl md:text-5xl font-extrabold font-main text-[#131022]'>Task Management Assistant You Gonna Love</h2></div>
+              {/*------------------- description  */}
+              <div className='w-full pt-6 pb-8'><p className='text-base md:text-lg font-normal font-main text-[#585C7B]'>We offer you a new generation of task management system. Plan, manage & track all your tasks in one flexible tool.</p></div>
+              {/* ------------ button */}
+              <div className='w-full max-w-xs bg-[#6366F1] rounded-[6px] shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.1)] mb-8'>
+                <button className='w-full py-3 text-base md:text-lg font-semibold font-main text-[#fff] rounded-[6px] px-8'>Get started for free</button>
+              </div>
+              {/* --------------- subtitle */}
+              <div><h2 className='text-sm md:text-base pt-12 pb-10 font-extrabold font-main text-[#131022]'>Largest companies use our tool to work efficiently</h2></div>
+              {/* ------------- icons */}
+              <div><img src={subtitle} alt="subtitle" className='max-w-full h-auto' /></div>
             </div>
+            {/* ------------ right-side */}
+            <div className='flex-1 w-full flex justify-center md:justify-end relative mb-8 md:mb-0'>
+              <img className='w-full max-w-2xl h-auto' src={bannerimg} alt="banner-img" />
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     
     
     </>
