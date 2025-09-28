@@ -13,7 +13,7 @@ import { VscChecklist } from "react-icons/vsc";
 const Connected = () => {
   return (
     <>
-      <section id="connected" className="py-10 md:py-20">
+      <section id="connected" className="pt-[142px]">
         <div className="container mx-auto px-4">
           {/* --------------- heading */}
           <div className="flex justify-center mb-8 md:mb-12">
