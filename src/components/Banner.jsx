@@ -9,7 +9,7 @@ const Banner = () => {
     
   <section id='banner' className='flex flex-col-reverse md:flex-row relative justify-between items-center pb-16 md:pb-[209px]'>
         <div className="container">
-          <div id='banner-row' className='pt-16 md:pt-[112px] pb-16 md:pb-[209px] flex flex-col md:flex-row items-center'>
+          <div id='banner-row' className='flex'>
             {/* --------------- left-side */}
             <div className='flex-1 w-full max-w-xl'>
               {/* ---------- h2 */}
@@ -27,7 +27,7 @@ const Banner = () => {
             </div>
             {/* ------------ right-side */}
             <div className='flex-1 w-full flex justify-center md:justify-end relative mb-8 md:mb-0'>
-              <img className='w-full max-w-2xl h-auto' src={bannerimg} alt="banner-img" />
+              <img className='' src={bannerimg} alt="banner-img" />
             </div>
           </div>
         </div>
